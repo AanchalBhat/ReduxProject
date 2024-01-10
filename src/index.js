@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'redux';
 import store from './store';
+import tookitstore from './tookitstore';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+      <Provider store={tookitstore}>
+    {/* <Provider store={store}> */}
     <App />
     </Provider>
   </React.StrictMode>
